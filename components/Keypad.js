@@ -5,7 +5,7 @@ export default function Keypad({ input }) {
   let symbols = [
     ["C", "7", "4", "1", "+/-"],
     ["÷", "8", "5", "2", "0"],
-    ["*", "9", "6", "3", "."],
+    ["X", "9", "6", "3", "."],
     ["⇄", "-", "+"],
   ];
   return (
@@ -16,7 +16,8 @@ export default function Keypad({ input }) {
             <Text
               style={{
                 color: "white",
-                fontSize: 45,
+                fontSize: 40,
+
                 textAlign: "center",
               }}
             >
@@ -28,7 +29,14 @@ export default function Keypad({ input }) {
       <View style={styles.Column}>
         {symbols[1].map((a) => (
           <TouchableHighlight style={styles.Cell}>
-            <Text style={{ color: "white", fontSize: 45, textAlign: "center" }}>
+            <Text
+              style={{
+                color: "white",
+                fontSize: 40,
+
+                textAlign: "center",
+              }}
+            >
               {a}
             </Text>
           </TouchableHighlight>
@@ -37,7 +45,7 @@ export default function Keypad({ input }) {
       <View style={styles.Column}>
         {symbols[2].map((a) => (
           <TouchableHighlight style={styles.Cell}>
-            <Text style={{ color: "white", fontSize: 45, textAlign: "center" }}>
+            <Text style={{ color: "white", fontSize: 40, textAlign: "center" }}>
               {a}
             </Text>
           </TouchableHighlight>
@@ -46,7 +54,13 @@ export default function Keypad({ input }) {
       <View style={styles.Column}>
         {symbols[3].map((a) => (
           <TouchableHighlight style={styles.Cell}>
-            <Text style={{ color: "white", fontSize: 45, textAlign: "center" }}>
+            <Text
+              style={{
+                color: "white",
+                fontSize: 40,
+                textAlign: "center",
+              }}
+            >
               {a}
             </Text>
           </TouchableHighlight>
@@ -55,7 +69,7 @@ export default function Keypad({ input }) {
           <Text
             style={{
               color: "white",
-              fontSize: 45,
+              fontSize: 40,
               textAlign: "center",
               marginTop: 30,
             }}
@@ -70,7 +84,7 @@ export default function Keypad({ input }) {
 
 const styles = StyleSheet.create({
   Container: {
-    flex: 2,
+    flex: 1.6,
     flexDirection: "row",
   },
   Column: {

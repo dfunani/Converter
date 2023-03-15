@@ -1,21 +1,17 @@
-import {StyleSheet, Text, View,} from 'react-native' 
-import { FontAwesome5 } from '@expo/vector-icons';
-import { Feather } from '@expo/vector-icons';
+import { StyleSheet, Text, View } from "react-native";
 
-export default function Display({ tab, history, flagged })
-{
-	return (
-		<View style={styles.Container}>
-			
-		</View>
-	)
+export default function Display({ tab, history, flagged }) {
+  return (
+    <View style={styles.Container}>
+      <Conversion />
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
-	Container: {
-		borderWidth: 5,
-		borderColor: 'red',
-		flex: 2
-	}
-
-})
+  Container: {
+    borderWidth: 5,
+    borderColor: "red",
+    flex: 2,
+  },
+});
